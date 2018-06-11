@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#CCC;
+}
+li{
+	list-style:none;
+}
+img{
+	border:0;
+}
+
+.main{
+	width:400px;
+	height:430px;
+	margin:50px auto 0;
+	background:#999;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.big-img{
+	width:400px;
+	height:320px;
+	overflow:hidden;
+	border-bottom:1px solid #CCC;
+	background:#222;
+	position:relative;
+}
+.big-img li{
+	width:400px;
+	height:320px;
+	overflow:hidden;
+	left:0;
+	top:0;
+	position:absolute;
+	z-index:0;
+	background:url(img/loading.gif) no-repeat center center;
+}
+
+.prev{
+	width:60px;
+	height:60px;
+	background:url(img/btn.gif) no-repeat;
+	position:absolute;
+	top:130px;
+	left:10px;
+	filter:alpha(opacity:0); opacity:0;
+	cursor:pointer;
+	z-index:1001;	
+}
+.next{
+	width:60px;
+	height:60px;
+	background:url(img/btn.gif) no-repeat 0 -60px;
+	position:absolute;
+	top:130px;
+	right:10px;
+	filter:alpha(opacity:0); opacity:0;
+	cursor:pointer;
+	z-index:1001;
+}
+.left{
+	width:200px;
+	height:320px;
+	background:green;
+	position:absolute;
+	top:0;
+	left:0;
+	filter:alpha(opacity:0); opacity:0;
+	z-index:1000;
+}
+.right{
+	width:200px;
+	height:320px;
+	background:red;
+	position:absolute;
+	top:0;
+	right:0;
+	filter:alpha(opacity:0); opacity:0;
+	z-index:1000;
+}
+.loading{
+	position:absolute;
+	left:10px;
+	bottom:4px;
+	z-index:1000;
+	color:#fff;
+}
+.length{
+	position:absolute;
+	right:10px;
+	bottom:4px;
+	z-index:1000;
+	color:#fff;
+}
+.bg{
+	width:400px;
+	height:25px;
+	background:#000;
+	position:absolute;
+	left:0;
+	bottom:0;
+	filter:alpha(opacity:60); opacity:0.6;
+	z-index:999;
+}
+.bottom{
+	width:380px;
+	height:94px;
+	position:relative;
+	top:7px;
+	left:10px;
+	overflow:hidden;
+}
+.bottom ul{
+	height:94px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.bottom li{
+	float:left;
+	padding-right:10px;
+	background:url(img/loading.gif) no-repeat center center;
+	filter:alpha(opacity:60); opacity:0.6;
+	cursor:pointer
+}
+
+.bottom img{
+	width:120px;
+	height:94px;
+}
